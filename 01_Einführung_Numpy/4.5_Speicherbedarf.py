@@ -24,3 +24,9 @@ a = np.array([24, 12, 57], np.int32)
 print(size(a) - 96)
 a = np.array([24, 12, 57], np.int64)
 print(size(a) - 96)
+
+
+# Speicherteilung:
+b = np.array([1, 2, 3, 4, 5])
+c = b + 2
+print(np.may_share_memory(b, c))
