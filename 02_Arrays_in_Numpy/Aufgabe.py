@@ -1,22 +1,45 @@
 import numpy as np
 
-# eindimensionales Array anlegen
+print("eindimensionales Array anlegen")
 onedim = np.array([1, 2, 3, 4, 5, 6])
 print(onedim)
 
-# ganze Array + 2
-print(onedim + 2)
+print("Array was aus den ungeraden Indizes von onedim besteht")
 
-# Teilbereich ausgeben [Start-inklusiv:Stop-exklusiv:Schrittweite]
-print(onedim[2:5:1])
+un_onedim = onedim[::2]
+print(un_onedim)
 
-# Array "umdrehen"
+print("Array umdrehen")
+
 onedim = onedim[::-1]
 print(onedim)
 
-# zweidimensionales Array anlegen
+print("wie sieht die Augabe aus ?")
+
+a = np.array([1, 2, 3, 4, 5])
+b = a[1:4]
+b[0] = 200
+print(a[1])
+
+print("zweidimensionales Array anlegen")
+
 twodim = np.array([[1, 2, 3], 
                    [4, 5, 6]])
 print(twodim)
 
+print("jede Zeile umdrehen")
 
+print(twodim[::,::-1])
+
+print("Array umdrehen")
+
+print(twodim[::-1])
+
+print("neues Array welches die Zeilen und Spalten in umgedrehter Reihenfolge beinhaltet")
+
+m = twodim[::-1, ::-1]
+print(m)
+
+print("Erste Reihe und Spalte von m abschneiden")
+
+print(m[1:-1, 1:-1])
