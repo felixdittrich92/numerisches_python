@@ -38,6 +38,6 @@ print('----Ein- und Ausgabe von strukturierten Arrays----')
 # save as csv
 np.savetxt("population_table.csv", population_table, fmt='%s;%d;%d;%d', delimiter=';') #fmt = format string;data;data;data
 
-# load 
+# load and print
 file = np.loadtxt('population_table.csv', delimiter=';', dtype=dt)
 print(file)
